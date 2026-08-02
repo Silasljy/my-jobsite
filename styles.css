@@ -1,0 +1,143 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "PingFang SC", "Helvetica Neue", Arial, sans-serif;
+  background: #f7f8fb;
+  color: #1f2937;
+}
+.page-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.hero {
+  background: linear-gradient(135deg, #4f46e5 0%, #3b82f6 100%);
+  color: white;
+  border-radius: 24px;
+  padding: 50px 30px;
+  margin-bottom: 24px;
+}
+.hero-content {
+  max-width: 720px;
+}
+.eyebrow {
+  margin: 0 0 12px;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  opacity: 0.9;
+  font-size: 0.85rem;
+}
+.hero h1 {
+  margin: 0 0 14px;
+  font-size: clamp(2rem, 4vw, 3.5rem);
+}
+.subtitle {
+  margin: 0 0 24px;
+  line-height: 1.7;
+  max-width: 620px;
+}
+.cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 22px;
+  background: white;
+  color: #1f2937;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px rgba(15, 23, 42, 0.12);
+}
+.cta.secondary {
+  background: rgba(255,255,255,0.16);
+  color: white;
+}
+.section {
+  background: white;
+  border-radius: 22px;
+  padding: 28px 30px;
+  margin-bottom: 20px;
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.04);
+}
+.section.highlight {
+  border: 1px solid rgba(59, 130, 246, 0.16);
+}
+.section h2 {
+  margin-top: 0;
+  font-size: 1.65rem;
+  color: #111827;
+}
+.section p,
+.section ul,
+.section .meta {
+  margin: 0;
+  line-height: 1.8;
+}
+.section ul {
+  padding-left: 20px;
+}
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 12px;
+  margin-top: 16px;
+}
+.skills-grid span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 14px;
+  background: #eef2ff;
+  border-radius: 999px;
+  color: #3730a3;
+  font-weight: 600;
+}
+.timeline-item {
+  margin-top: 20px;
+}
+.timeline-item h3 {
+  margin: 0 0 8px;
+}
+.meta {
+  color: #6b7280;
+  margin-bottom: 12px;
+}
+.contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.contact-list li {
+  margin-bottom: 10px;
+}
+.contact-list a {
+  color: #2563eb;
+  text-decoration: none;
+}
+.footer {
+  text-align: center;
+  margin-top: 10px;
+  color: #6b7280;
+}
+@media (max-width: 640px) {
+  .page-container {
+    padding: 16px;
+  }
+  .hero {
+    padding: 32px 20px;
+  }
+  .section {
+    padding: 22px 20px;
+  }
+}
