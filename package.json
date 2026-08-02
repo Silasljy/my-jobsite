@@ -1,0 +1,14 @@
+{
+  "name": "jobsite",
+  "version": "1.0.0",
+  "description": "简单的求职文件预览网站，支持文件上传和只读展示。",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.4",
+    "mime-types": "^2.1.35",
+    "multer": "^2.2.0"
+  }
+}
