@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: my-jobsite
+    env: node
+    plan: free
+    region: oregon
+    repo: <replace-with-github-owner>/my-jobsite
+    branch: main
+    buildCommand: "npm install"
+    startCommand: "npm start"
+    autoDeploy: true
